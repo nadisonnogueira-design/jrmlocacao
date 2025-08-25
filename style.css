@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #003399;
+}
+
+header {
+  background: #003399;
+  color: orange;
+  text-align: center;
+  padding: 20px;
+}
+
+header p {
+  font-size: 14px;
+  color: #fff;
+}
+
+header .destaque {
+  color: orange;
+}
+
+h2 {
+  color: #003399;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.setor {
+  padding: 20px;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.item {
+  min-width: 150px;
+  text-align: center;
+  scroll-snap-align: start;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+button {
+  background: orange;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+button:hover {
+  background: #ffb84d;
+}
+
+/* Efeito surgir */
+.surgir .item {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.7s ease-in-out;
+}
+
+.surgir .item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #003399;
+  color: orange;
+  font-size: 14px;
+}
+/* Setor segurança horizontal com efeito surgir */
+.surgir-horizontal .item {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease-in-out;
+}
+
+.surgir-horizontal .item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
